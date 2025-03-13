@@ -1,8 +1,35 @@
-# React + Vite
+# ¿Cómo inicializarlo?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## En la raíz del proyecto:
+```
+npm install
+```
 
-Currently, two official plugins are available:
+## En la carpeta server: backendEstructuraBasica/server
+```
+npm i express cors
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Ejecuón server: backendEstructuraBasica/server
+```
+node server.js
+```
+
+La consola debería mostrar lo siguiente:
+```
+Servidor en http://localhost:3000
+```
+
+### En la raíz del proyecto:
+```
+npm run dev
+```
+
+## La consola debería mostrar lo siguiente:
+```
+VITE v6.1.1  ready in 241 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+```
