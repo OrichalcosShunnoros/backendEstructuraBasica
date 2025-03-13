@@ -1,0 +1,199 @@
+.App {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  & .App-header {
+    width: 50%;
+
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    & button {
+      width: 200px;
+      background: #0084ff;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      font-weight: medium;
+    }
+
+    & button:hover:not(:focus) {
+      background: #0084ff;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 5px 10px 0px #0053a1;
+    }
+
+    & button:focus {
+      box-shadow: inset 0 5px 10px 0px #0053a1;
+      transform: translateY(2px);
+      font-weight: normal;
+      font-weight: bold;
+    }
+  }
+
+  & .form {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+
+    padding: 1rem;
+    gap: 10px;
+
+    & input[type="text"],
+    input[type="password"] {
+      width: 400px;
+      height: 30px;
+      border-radius: 5px;
+      padding-inline: 10px;
+      border: none;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+      background: #eee;
+    }
+
+    & input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    & label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    & .crear {
+      width: 220px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      background: #0084ff;
+      color: #fff;
+      transition: all 0.2s ease-in-out;
+    }
+
+    & .crear:hover {
+      background: #0084ff;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 5px 10px 0px #0053a1;
+    }
+    & .crear:focus {
+      background: #0084ff;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: inset 0 5px 10px 0px #0053a1;
+      transform: translateY(2px);
+    }
+  }
+
+  & .tabla {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+
+    padding: 1rem;
+    gap: 10px;
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid #000;
+    }
+    
+    td,
+    th {
+      border: 1px solid #333;
+      padding: 10px;
+    }
+    
+    th {
+      background: #000;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    
+    td {
+      text-align: center;
+      border-bottom: 2px solid #111;
+      color: #333;
+      font-size: 18px;
+
+      & .act {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #0084ff;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+        margin-right: 10px;
+      }
+
+      & .act:hover {
+        background: #0084ff;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0 5px 10px 0px #0053a1;
+      }
+
+      & .del {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #ff0000;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+      }
+
+      & .del:hover {
+        background: #ff0000;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0 5px 10px 0px #ff0000;
+      }
+    }
+  }
+}

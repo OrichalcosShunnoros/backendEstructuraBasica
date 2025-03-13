@@ -1,0 +1,57 @@
+### GET usuarios
+GET http://localhost:3000/usuarios
+
+### POST usuarios
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Juan Pérez",
+  "email": "juan@example.com",
+  "estudiando": true,
+  "contraseña": "123456"
+}
+
+### PUT usuario
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+  "nombre": "Juan Pérez Actualizado",
+  "email": "juan.perez@example.com",
+  "estudiando": false,
+  "contraseña": "nuevaClave"
+}
+
+### DELETE usuarios
+DELETE http://localhost:3000/usuarios/1
+
+
+### GET productos
+GET http://localhost:3000/productos
+
+### POST producto
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Laptop",
+  "descripcion": "Laptop de gama alta con procesador i7",
+  "cantidad": 5,
+  "valor": 1200
+}
+
+### PUT producto
+PUT http://localhost:3000/productos/1
+Content-Type: application/json
+
+{
+  "nombre": "Laptopaaaaaaaaaaaaaa",
+  "descripcion": "Laptop de gama alta con procesador i7",
+  "cantidad": 5,
+  "valor": 1200
+}
+
+
+### DELETE producto
+DELETE http://localhost:3000/productos/1
